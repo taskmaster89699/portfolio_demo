@@ -1,0 +1,111 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+
+.navbar ul {
+    height: 50px;
+    width: 100vw;
+    background-color: gray;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin-right: 25px;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 25px;
+    color: white;
+    padding-left: 25px;
+}
+
+.intro {
+    padding: 5px 5px;
+    margin: 50px 0;
+    height: 540px;
+    border: 1px solid #000;
+    background-color: rgba(235, 132, 14, 0.911);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    color: #000;
+}
+
+.sub{
+    color: #f30707;
+}
+
+.proj-intro {
+    text-decoration: underline;
+    text-align: center;
+    margin: 20px 0;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 25px;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 55px;
+    margin:50px 15px;
+}
+
+.contact p {
+    margin: 20px 0 35px 20px;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 20px;
+}
+
+.contact ul {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px;
+}
+
+.contact ul li {
+    list-style-type: none;
+}
+
+.project-title{
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 20px;
+}
+
+.projects a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 375px){
+    #projects{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
